@@ -26,7 +26,7 @@ read = read.reader()
 logger.info("cleaning existing json file for fresh update")
 # We don't want duplicate as we are appending to the Json file
 # This will delete the existing data and fill the new one's everytime
-# os.remove(config['data']['path_to_result_file'])
+os.remove(config['data']['path_to_result_file'])
 
 for line in read:
     # Iterate over all files
