@@ -11,7 +11,7 @@ import glob
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-with open('config.yml') as configuration:
+with open('../config.yml') as configuration:
     config = yaml.safe_load(configuration)
 logger.info("Configuration file has been loaded successfully")
 
