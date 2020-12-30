@@ -1,0 +1,3 @@
+data:
+  path_to_input_file: "./data/"
+  path_to_result_file: "./result/result.json"
