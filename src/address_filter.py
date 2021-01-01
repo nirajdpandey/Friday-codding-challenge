@@ -5,6 +5,7 @@ __Purpose__ = 'This file is main brain of the project which extract the addresse
 # import dependencies
 import logging
 import re
+
 # initialize logging
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
 logger = logging.getLogger(__name__)
