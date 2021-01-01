@@ -33,36 +33,35 @@ class FilterString:
         "4, rue de la revolution" -> {"street": "rue de la revolution", "housenumber": "4"}
         "200 Broadway Av" -> {"street": "Broadway Av", "housenumber": "200"}
         "Calle Aduana, 29" -> {"street": "Calle Aduana", "housenumber": "29"}
-        "Calle 39 No 1540" -> {"street": "Calle 39", "housenumber": "No 1540"}
 
         Sample output:
         [{"street": "Auf der Vogelwiese", "housenumber": "23 b"}]
         [{"street": "rue de la revolution", "housenumber": "4"}]
         [{"street": "Broadway Av", "housenumber": "200"}]
-        [{"street": "Calle Aduana", "housenumber": "29"}]
-        [{"street": "Calle 39", "housenumber": "No 1540"}]
-        [{"street": "Winterallee", "housenumber": "3"}]
 
         :return: Separated address strings into street name and house number
         """
         logger.info("Information Gathering Finished!")
 
-        pattern_street = re.compile(r'[A-Za-z]+\s?\w+(?=\s[Nn]o\s\d+$) | [A-Za-z]+\s?\w+\s?[A-Za-z]+\s?[A-Za-z]+',
+        pattern_street = re.compile(r'[A-Za-z]+\s?\w+(?=\s[Nn]o\s\d+$) |'
+                                    r' [A-Za-z]+\s?\w+\s?[A-Za-z]+\s?[A-Za-z]+',
                                     re.X)  # street pattern
         match_street = pattern_street.search(self.string)
 
         # If there are no house numbers provided in the input file,
-        # print(NO HOUSE NUMBER!) in the output JSON file
+        # print(not found) in the output JSON file
         numbers_instring = re.findall(r'\d+', self.string)  # digit counts in given string
 
         if len(numbers_instring) > 0:
             # In most cases we have: "no" followed by some digits
-            pattern_housenumber = re.compile(r'(\d+\s?[A-Za-z]?$) | (^\d+) | [Nn]o+[\s?]+[0-9]+$',
+            pattern_housenumber = re.compile(r'(\d+\s?[A-Za-z]?$) |'
+                                             r' (^\d+) |'
+                                             r' [Nn]o+[\s?]+[0-9]+$',
                                              re.X)  # house number pattern
             match_housenumber = pattern_housenumber.search(self.string)
             fin_housenumber = match_housenumber[0]
         else:
-            match_housenumber = ["NO HOUSE NUMBER!"]
+            match_housenumber = ["not found"]
 
         fin_housenumber = match_housenumber[0]
         fin_street = match_street[0]

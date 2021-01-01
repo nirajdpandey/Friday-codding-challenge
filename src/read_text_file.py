@@ -34,16 +34,15 @@ class DataReader:
         """
 
         logger.info("loading text file to read")
-        # Loading all the text file given folder
-        files = glob.glob(self.input_path + '*txt')
+        files = glob.glob(self.input_path + '*txt')  # Loading all the text file given folder
         print("Loaded file count is : ", len(files))
         for i in files:
             print("Loaded files are: ", i)
             # the [:] index is helpful in case you have just one input text file
             # this helps the loop not to throw any error
             with open(i[:], 'r', encoding='utf8') as file:
-                self.content.append(file.readlines())
+                self.content.append(file.readlines())  # append the lines to empty list
             logger.info("Loaded text file successfully!")
             logger.info("process finished!")
-            # Return all the extracted content in a python list
-        return self.content
+        return self.content  # Return all the extracted content in a python list
+
