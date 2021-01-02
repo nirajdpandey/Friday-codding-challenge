@@ -1,19 +1,19 @@
-18:33:15,455 __main__ INFO Configuration file has been loaded successfully
-18:33:15,455 read_text_file INFO loading text file to read
-18:33:15,457 read_text_file INFO Loaded text file successfully!
-18:33:15,458 read_text_file INFO process finished!
-18:33:15,458 read_text_file INFO Loaded text file successfully!
-18:33:15,458 read_text_file INFO process finished!
-18:33:15,458 __main__ INFO cleaning existing json file for fresh update
-18:33:15,458 address_filter INFO Information Gathering Finished!
-18:33:15,464 address_filter INFO Information Gathering Finished!
-18:33:15,465 address_filter INFO Information Gathering Finished!
-18:33:15,465 address_filter INFO Information Gathering Finished!
-18:33:15,465 address_filter INFO Information Gathering Finished!
-18:33:15,465 address_filter INFO Information Gathering Finished!
-18:33:15,466 address_filter INFO Information Gathering Finished!
-18:33:15,466 address_filter INFO Information Gathering Finished!
-18:33:15,466 address_filter INFO Information Gathering Finished!
-18:33:15,466 address_filter INFO Information Gathering Finished!
-18:33:15,467 address_filter INFO Information Gathering Finished!
-18:33:15,467 address_filter INFO Information Gathering Finished!
+20:15:01,448 __main__ INFO Configuration file has been loaded successfully
+20:15:01,448 read_text_file INFO loading text file to read
+20:15:01,449 read_text_file INFO Loaded text file successfully!
+20:15:01,449 read_text_file INFO process finished!
+20:15:01,449 read_text_file INFO Loaded text file successfully!
+20:15:01,449 read_text_file INFO process finished!
+20:15:01,449 __main__ INFO cleaning existing json file for fresh update
+20:15:01,449 address_filter INFO Information Gathering Finished!
+20:15:01,451 address_filter INFO Information Gathering Finished!
+20:15:01,452 address_filter INFO Information Gathering Finished!
+20:15:01,452 address_filter INFO Information Gathering Finished!
+20:15:01,452 address_filter INFO Information Gathering Finished!
+20:15:01,453 address_filter INFO Information Gathering Finished!
+20:15:01,453 address_filter INFO Information Gathering Finished!
+20:15:01,453 address_filter INFO Information Gathering Finished!
+20:15:01,454 address_filter INFO Information Gathering Finished!
+20:15:01,454 address_filter INFO Information Gathering Finished!
+20:15:01,454 address_filter INFO Information Gathering Finished!
+20:15:01,455 address_filter INFO Information Gathering Finished!
