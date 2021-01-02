@@ -8,7 +8,11 @@ import logging
 import glob
 
 # initialize logging
-logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
+logging.basicConfig(filename='../logname.log',
+                    filemode='w',
+                    format='%(asctime)s,%(msecs)d %(name)s %(levelname)s %(message)s',
+                    datefmt='%H:%M:%S',
+                    level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 
 
@@ -45,4 +49,3 @@ class DataReader:
             logger.info("Loaded text file successfully!")
             logger.info("process finished!")
         return self.content  # Return all the extracted content in a python list
-
