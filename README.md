@@ -1,19 +1,25 @@
 # Address finder
 
-Given string of addresses this project will extract street name and house number out of those.
+Given concatenated string of addresses this project will extract street name and house number out of those.
+
+*** 
 
 ### Example 
 
-```buildoutcfg
-1. simple case:
-"Winterallee 3" -> {"street": "Winterallee", "housenumber": "3"}
-"Musterstrasse 45" -> {"street": "Musterstrasse", "housenumber": "45"}
-"Blaufeldweg 123B" -> {"street": "Blaufeldweg", "housenumber": "123B"}
 
-2. Complex case:
-"4, rue de la revolution" -> {"street": "rue de la revolution", "housenumber": "4"}
-"200 Broadway Av" -> {"street": "Broadway Av", "housenumber": "200"}
-"Calle Aduana, 29" -> {"street": "Calle Aduana", "housenumber": "29"}
-"Calle 39 No 1540" -> {"street": "Calle 39", "housenumber": "No 1540"}
 
-```
+| No   |      Input      |  Output |
+|----------|:-------------:|------:|
+| 1 |  "Winterallee 3"  | {"street": "Winterallee", "housenumber": "3"} |
+| 2 |    "Musterstrasse 45"   |   {"street": "Musterstrasse", "housenumber": "45"} |
+| 3 | "4, rue de la revolution"|    {"street": "rue de la revolution", "housenumber": "4"} |
+| 4 | "Calle 39 No 1540" | {"street": "Calle 39", "housenumber": "No 1540"} |
+| 5 | "Calle Aduana, 29"  | {"street": "Calle Aduana", "housenumber": "29"} |
+
+
+***
+
+### Report 
+
+The report folder caontains more detailed explanation to the approach and should be seen as `README.md`. This is the reason not to write much here.
+
