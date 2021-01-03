@@ -1,0 +1,19 @@
+17:55:35,747 __main__ INFO Configuration file has been loaded successfully
+17:55:35,747 read_text_file INFO loading text file to read
+17:55:35,748 read_text_file INFO Loaded text file successfully!
+17:55:35,748 read_text_file INFO process finished!
+17:55:35,748 read_text_file INFO Loaded text file successfully!
+17:55:35,748 read_text_file INFO process finished!
+17:55:35,748 __main__ INFO cleaning existing json file for fresh update
+17:55:35,748 address_filter INFO Information Gathering Finished!
+17:55:35,751 address_filter INFO Information Gathering Finished!
+17:55:35,751 address_filter INFO Information Gathering Finished!
+17:55:35,752 address_filter INFO Information Gathering Finished!
+17:55:35,752 address_filter INFO Information Gathering Finished!
+17:55:35,753 address_filter INFO Information Gathering Finished!
+17:55:35,753 address_filter INFO Information Gathering Finished!
+17:55:35,753 address_filter INFO Information Gathering Finished!
+17:55:35,754 address_filter INFO Information Gathering Finished!
+17:55:35,754 address_filter INFO Information Gathering Finished!
+17:55:35,754 address_filter INFO Information Gathering Finished!
+17:55:35,755 address_filter INFO Information Gathering Finished!

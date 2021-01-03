@@ -8,7 +8,7 @@ import logging
 import glob
 
 # initialize logging
-logging.basicConfig(filename='../logname.log',
+logging.basicConfig(filename='../logging.log',
                     filemode='w',
                     format='%(asctime)s,%(msecs)d %(name)s %(levelname)s %(message)s',
                     datefmt='%H:%M:%S',
@@ -40,12 +40,12 @@ class DataReader:
         logger.info("loading text file to read")
         files = glob.glob(self.input_path + '*txt')  # Loading all the text file given folder
         print("Loaded file count is : ", len(files))
-        for i in files:
-            print("Loaded files are: ", i)
+        for file in files:
+            print("Loaded files are: ", file)
             # the [:] index is helpful in case you have just one input text file
             # this helps the loop not to throw any error
-            with open(i[:], 'r', encoding='utf8') as file:
-                self.content.append(file.readlines())  # append the lines to empty list
+            with open(file[:], 'r', encoding='utf8') as f:
+                self.content.append(f.readlines())  # append the lines to empty list
             logger.info("Loaded text file successfully!")
             logger.info("process finished!")
         return self.content  # Return all the extracted content in a python list

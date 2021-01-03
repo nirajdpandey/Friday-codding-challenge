@@ -13,7 +13,7 @@ import unittest
 import pathlib as pl
 
 # initialize logging
-logging.basicConfig(filename='../logname.log',
+logging.basicConfig(filename='../logging.log',
                     filemode='w',
                     format='%(asctime)s,%(msecs)d %(name)s %(levelname)s %(message)s',
                     datefmt='%H:%M:%S',

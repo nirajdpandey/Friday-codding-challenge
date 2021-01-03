@@ -11,13 +11,12 @@ from read_text_file import DataReader
 from address_filter import FilterString
 
 # initialize logging
-logging.basicConfig(filename='../logname.log',
+logging.basicConfig(filename='../logging.log',
                     filemode='w',
                     format='%(asctime)s,%(msecs)d %(name)s %(levelname)s %(message)s',
                     datefmt='%H:%M:%S',
                     level=logging.DEBUG)
 logger = logging.getLogger(__name__)
-
 
 with open('../config.yml') as configuration:
     config = yaml.safe_load(configuration)
@@ -36,6 +35,8 @@ if not os.path.exists(output_path):
     with open(output_path, "w"):  # create file if not exists already
         pass
 os.remove(output_path)
+
+
 # We don't want duplicate as we are appending to the Json file
 # This will delete the existing data and fill the new one's everytime
 
@@ -52,3 +53,4 @@ for line in read:  # Iterate over all files
             json.dump(result, outfile, ensure_ascii=False)
             # using new line for every entry. makes data looks better
             outfile.writelines('\n')
+
