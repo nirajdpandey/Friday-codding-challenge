@@ -21,5 +21,5 @@ Given concatenated string of addresses this project will extract street name and
 
 ### Report 
 
-The report folder caontains more detailed explanation to the approach and should be seen as `README.md`. This is the reason not to write much here.
+The `doc` folder caontains more detailed explanation to the approach and should be seen as `README.md`. This is the reason not to write much here.
 
